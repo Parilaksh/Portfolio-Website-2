@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parilaksh Thakur | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Header -->
+    <header>
+        <h1>Parilaksh Thakur</h1>
+        <p>Aspiring Software Developer | Java & Python Enthusiast</p>
+    </header>
+
+    <!--Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   <!--Home Section -->
+    <section id="home" class="container">
+        <h2>Bike Riding</h2>
+        <p>
+            Bike riding is my favorite hobby because it gives me a sense of freedom and adventure.
+            Riding through mountains and open roads helps me clear my mind, reduce stress,
+            and stay physically active. It also allows me to explore new places and build confidence.
+        </p>
+                    <h3>Add New Benefit</h3>
+
+            <input type="text" id="benefitInput" placeholder="Enter new benefit">
+
+            <button onclick="addBenefit()">Add Benefit</button>
+
+            <h3>Benefits of Bike Riding:</h3>
+
+            <ol id="benefitsList">
+                <li>Improves physical fitness</li>
+                <li>Reduces stress</li>
+                <li>Builds confidence</li>
+            </ol>
+    </section>
+
+    <!--About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+            I am currently pursuing B.Tech in Computer Science Engineering.
+            I have strong knowledge of Java, Python, Web Development, and SQL.
+            I am passionate about building software solutions and continuously improving my technical skills.
+        </p>
+    </section>
+
+    <!--Projects Section -->
+    <section id="projects" class="container">
+        <h2>My Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A web application that fetches real-time weather data using API integration.</p>
+                <a href="https://github.com/Parilaksh/weather-app" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Snake Game (Python)</h3>
+                <p>A classic snake game developed using Python with basic game logic and GUI.</p>
+                <a href="#">GitHub Link</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Bingo Game (Local Server)</h3>
+                <p>A multiplayer bingo game developed using local server connectivity.</p>
+                <a href="#">GitHub Link</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Contact Section -->
+   
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+
+    <!--Footer -->
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/parilaksh-thakur" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Parilaksh" target="_blank">GitHub</a>
+        <p>© 2026 Parilaksh Thakur</p>
+        <p id="dateTime"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
